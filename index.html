@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İlk Web Sitem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <span class="logo">Hakan<span class="logo-dot">.</span></span>
+      <nav>
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#ogrendiklerim">Öğrendiklerim</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <button id="theme-toggle" aria-label="Temayı değiştir">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Merhaba, ben</p>
+        <h1>Hakan</h1>
+        <p class="hero-text">
+          Bu benim ilk web sitem — HTML, CSS ve biraz JavaScript ile
+          sıfırdan yaptım. Şu an ücretsiz bir hosting servisine yüklemeyi öğreniyorum.
+        </p>
+        <a class="btn" href="#hakkimda">Devam et ↓</a>
+      </div>
+    </section>
+
+    <section id="hakkimda" class="section">
+      <div class="container">
+        <h2>Hakkımda</h2>
+        <p>
+          Burası kendini tanıtabileceğin alan. İstersen kısa bir biyografi,
+          ilgi alanların ya da yaptığın işler hakkında birkaç cümle yazabilirsin.
+          Bu metni kendi bilgilerinle değiştirmen yeterli.
+        </p>
+      </div>
+    </section>
+
+    <section id="ogrendiklerim" class="section alt">
+      <div class="container">
+        <h2>Bu Sitede Öğrendiklerim</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>HTML</h3>
+            <p>Sayfanın iskeletini oluşturan işaretleme dili. Başlıklar, paragraflar, linkler hep HTML ile yazılır.</p>
+          </div>
+          <div class="card">
+            <h3>CSS</h3>
+            <p>Sayfanın görünümünü, renklerini ve düzenini belirler. Bu sitedeki tüm stil <code>style.css</code> dosyasında.</p>
+          </div>
+          <div class="card">
+            <h3>JavaScript</h3>
+            <p>Sayfaya etkileşim katar. Sağ üstteki tema değiştirme düğmesi JavaScript ile çalışıyor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="section">
+      <div class="container">
+        <h2>İletişim</h2>
+        <p>Buraya e-posta adresini, sosyal medya linklerini veya bir iletişim formu ekleyebilirsin.</p>
+        <a class="btn btn-outline" href="mailto:ornek@eposta.com">✉ ornek@eposta.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Hakan — İlk web sitem, ücretsiz hosting ile yayında.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
